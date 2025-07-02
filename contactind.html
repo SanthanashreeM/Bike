@@ -1,0 +1,212 @@
+<html>
+  <head>
+  <title>Contact</title>
+  <link rel="icon" href="motorcycle.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('cont.webp') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    nav{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: large;
+      text-align: right;
+      color: azure;
+    }
+    a{
+      text-decoration: none;
+      padding: 10px;
+      padding-bottom: 20%;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 36px;
+      color: lime;
+      text-shadow: 2px 2px 5px red;
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #fff;
+      text-shadow: 1px 1px 3px black;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      flex-wrap: wrap;
+    }
+
+    .form-section {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+    .radio-group {
+      margin-top: 10px;
+      padding-left: 10px;
+    }
+
+    .radio-group input[type="radio"] {
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    fieldset {
+      border: 2px solid #00b894;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin-top: 10px;
+      background-color: #f9f9f9;
+    }
+
+    legend {
+      padding: 0 10px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #00b894;
+    }
+
+    .submit-btn {
+      background: #00b894;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .submit-btn:hover {
+      background: #00997a;
+    }
+
+    @media (max-width: 768px) {
+      form {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="homeind.html">Home</a>
+    <a href="galleryind.html">Gallery</a>
+    <a href="aboutind.html">About</a>
+    <a href="contactind.html">Contact</a>
+  </nav>
+
+  <div class="main-content">
+    <h2>Contact</h2>
+    <h3>Bike Rental Form</h3>
+
+    <!-- Form action points to httpbin.org for demo purposes -->
+    <form action="https://httpbin.org/post" method="post" target="_blank">
+      <!-- Left Section -->
+      <div class="form-section">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your First Name" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+
+        <label for="phone">Phone No:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+
+        <label>Choose Vehicle:</label>
+        <div class="radio-group">
+          <input type="radio" name="vehicle" value="Honda" required> Honda
+          <input type="radio" name="vehicle" value="Ninja"> Ninja
+          <input type="radio" name="vehicle" value="Hero Honda"> Hero Honda
+          <input type="radio" name="vehicle" value="KTM"> KTM
+          <input type="radio" name="vehicle" value="Harley"> Harley
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="form-section">
+        <fieldset>
+          <legend>Payment Details</legend>
+
+          <label for="payment-mode">Payment Mode:</label>
+          <select id="payment-mode" name="payment-mode" required>
+            <option value="">--Select--</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="UPI">UPI</option>
+            <option value="Net Banking">Net Banking</option>
+          </select>
+
+          <label for="card-number">Card/UPI Number:</label>
+          <input type="text" name="card-number" id="card-number" placeholder="Enter payment ID/card number" required>
+
+          <label for="amount">Amount:</label>
+          <input type="number" name="amount" id="amount" placeholder="Enter amount in ₹" required>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

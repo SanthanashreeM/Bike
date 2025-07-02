@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>Gallery</title>
+    <link rel="icon" href="motorcycle.png">
+    <style>
+        nav {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            text-align: right;
+            color: azure;
+        }
+        h2 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+            color: rgb(0, 255, 13);
+            text-shadow: 2px 2px 2px red;
+            text-align: center;
+        }
+         a{
+                text-decoration: none;
+                padding: 10px;
+                padding-bottom: 20%;
+            }
+        .gallery {
+           
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .item {
+            text-align: center;
+        }
+        .item a img {
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .item a img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="homeind.html">Home</a>
+        <a href="galleryind.html">Gallery</a>
+        <a href="aboutind.html">About</a>
+        <a href="contactind.html">Contact</a>
+    </nav>
+
+    <h2>Our Gallery</h2>
+
+    <div class="gallery">
+        <div class="item">
+            <a href="yamaha.html">
+                <img src="yamaha.webp" height="300px" width="300px">
+            </a>
+            <div><label>Yamaha FZ</label></div>
+        </div>
+        <div class="item">
+            <a href="rx.html">
+                <img src="rxlogo.webp" height="300px" width="300px">
+            </a>
+            <div><label>RX</label></div>
+        </div>
+        <div class="item">
+            <a href="ninja.html">
+                <img src="ninjalogo.webp" height="300px" width="300px">
+            </a>
+            <div><label>Kawasaki Ninja</label></div>
+        </div>
+        <div class="item">
+            <a href="ktm.html">
+                <img src="ducklogo.webp" height="300px" width="300px">
+            </a>
+            <div><label>KTM </label></div>
+        </div>
+        <div class="item">
+            <a href="hero.html">
+                <img src="mavricklogo1.webp" height="300px" width="300px">
+            </a>
+            <div><label>Hero Mavrick </label></div>
+        </div>
+        <div class="item">
+            <a href="bajaj.html">
+                <img src="bajajlogo1.webp" height="300px" width="300px">
+            </a>
+            <div><label>Bajaj</label></div>
+        </div>
+        <div class="item">
+            <a href="harley.html">
+                <img src="harleylogo.webp" height="300px" width="300px">
+            </a>
+            <div><label>Harley Davidson </label></div>
+        </div>
+        <div class="item">
+            <a href="royal.html">
+                <img src="royallogo.webp" height="300px" width="300px">
+            </a>
+            <div><label>Royal Enfield</label></div>
+        </div>
+    </div>
+</body>
+</html>
