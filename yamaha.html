@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yamaha Gallery</title>
+  <link rel="icon" href="motorcycle.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('background.webp') center/cover no-repeat;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      text-align: right;
+    }
+    nav a {
+      color: azure;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    nav a:hover { color: lime; }
+    h2 {
+      text-align: center;
+      color: #0f0;
+      font-size: 48px;
+      text-shadow: 2px 2px red;
+      margin: 20px 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px 40px;
+    }
+    .item {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+    .item:hover { transform: scale(1.03); }
+    .item img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .caption { font-weight: bold; color: #222; }
+    .rent { font-size: 14px; color: #444; }
+    @media (max-width: 600px) {
+      h2 { font-size: 36px; }
+      .gallery { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="homeind.html">Home</a>
+    <a href="galleryind.html">Gallery</a>
+    <a href="aboutind.html">About</a>
+    <a href="contactind.html">Contact</a>
+  </nav>
+
+  <h2>YAMAHA</h2>
+
+  <div class="gallery">
+    <a href="contactind.html" class="item">
+      <img src="y1.webp" alt="Yamaha FZ">
+      <div class="caption">Yamaha FZ</div>
+      <div class="rent">₹120 / 1hr</div>
+    </a>
+    <a href="contactind.html" class="item">
+      <img src="y2.webp" alt="Yamaha R15">
+      <div class="caption">Yamaha R15</div>
+      <div class="rent">₹150 / 1hr</div>
+    </a>
+    <a href="contactind.html" class="item">
+      <img src="y3.webp" alt="Yamaha MT-15">
+      <div class="caption">Yamaha MT-15</div>
+      <div class="rent">₹140 / 1hr</div>
+    </a>
+    <a href="contactind.html" class="item">
+      <img src="y4.webp" alt="Yamaha Fascino">
+      <div class="caption">Yamaha Fascino</div>
+      <div class="rent">₹100 / 1hr</div>
+    </a>
+    <a href="contactind.html" class="item">
+      <img src="y41.webp" alt="Yamaha RX100">
+      <div class="caption">Yamaha RX100</div>
+      <div class="rent">₹170 / 1hr</div>
+    </a>
+    <a href="contactind.html" class="item">
+      <img src="y5.webp" alt="Yamaha Aerox">
+      <div class="caption">Yamaha Aerox</div>
+      <div class="rent">₹200 / 1hr</div>
+    </a> 
+    <a href="contactind.html" class="item">
+      <img src="y6.webp" alt="Yamaha Aerox">
+      <div class="caption">Yamaha wr 125</div>
+      <div class="rent">₹250 / 1hr</div>
+    </a>
+    <a href="contactind.html" class="item">
+      <img src="y7.webp" alt="Yamaha Aerox">
+      <div class="caption">Maisto Yamaha</div>
+      <div class="rent">₹200 / 1hr</div>
+    </a> 
+  </div>
+
+</body>
+</html>
